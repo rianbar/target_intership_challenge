@@ -2,11 +2,15 @@ package challenges;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class StringInverse {
 
     public static void main(String[] args) {
-        System.out.println(reverseString("carro de controle remoto"));
+        Scanner scan = new Scanner(System.in);
+        System.out.println("write the word you want to reverse: ");
+        String word = scan.next();
+        System.out.println("you reversed word is: " + reverseString(word));
     }
 
     public static String reverseString(String name) {

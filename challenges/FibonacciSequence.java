@@ -1,9 +1,15 @@
 package challenges;
 
+import java.util.Scanner;
+
 public class FibonacciSequence {
 
     public static void main(String[] args) {
-        System.out.println(fibonacciSolution(5));
+        Scanner scan = new Scanner(System.in);
+        System.out.println("write the number you want to check in the fibonacci: ");
+        int number = scan.nextInt();
+        System.out.println("your number " + fibonacciSolution(number) + " to the sequence!");
+        System.out.println(fibonacciSolution(number));
     }
 
     public static String fibonacciSolution(int value) {
@@ -20,6 +26,6 @@ public class FibonacciSequence {
             }
         }
 
-       return cur == value ? "pertence" : "não pertence";
+       return cur == value ? "belongs" : "doesn't belongs";
     }
 }
